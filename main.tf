@@ -22,3 +22,13 @@ module "compute" {
   security_group  = "${module.networking.public_sg}"
   subnet_ips      = "${module.networking.public_ips}"
 }
+
+# Deploy RDS Resources
+module "database" {
+  source         = "./database"
+  db_name        = "${var.db_name}"
+  db_username    = "${var.db_username}"
+  db_password    = "${var.db_password}"
+  db_subnet      = "${module.networking.private_subnets}"
+  security_group = "${module.networking.private_sg}"
+}

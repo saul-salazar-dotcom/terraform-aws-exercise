@@ -20,3 +20,8 @@ key_name             = "exercise_key"
 public_key_path      = "/home/saul/.ssh/id_rsa.pub"
 server_instance_type = "t2.micro"
 instance_count       = 2
+
+# Database Variables
+db_name     = "exercise_db"
+db_username = "hello"
+db_password = "helloworld"

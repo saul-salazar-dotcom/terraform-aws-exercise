@@ -21,3 +21,12 @@ output "Public Instance IDs" {
 output "Public Instance IPs" {
   value = "${module.compute.server_ip}"
 }
+
+# Database Outputs
+output "Database Endpoint" {
+  value = "${module.database.db_endpoint}"
+}
+
+output "Database RDS ID" {
+  value = "${module.database.db_id}"
+}
