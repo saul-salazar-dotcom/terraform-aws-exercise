@@ -14,3 +14,9 @@ private_cidrs = [
   "10.123.102.0/24"
 ]
 accessip     = "0.0.0.0/0"
+
+# Compute Variables
+key_name             = "exercise_key"
+public_key_path      = "/home/saul/.ssh/id_rsa.pub"
+server_instance_type = "t2.micro"
+instance_count       = 2

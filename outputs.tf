@@ -11,3 +11,13 @@ output "Public Subnet IPs" {
 output "Public Security Group" {
   value = "${module.networking.public_sg}"
 }
+
+# Compute Outputs
+
+output "Public Instance IDs" {
+  value = "${module.compute.server_id}"
+}
+
+output "Public Instance IPs" {
+  value = "${module.compute.server_ip}"
+}
